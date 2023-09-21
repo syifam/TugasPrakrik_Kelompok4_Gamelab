@@ -429,7 +429,7 @@ data-bs-theme="dark"
       <nav>
         <div class="nav nav-tabs py-5 justify-content-center" id="nav-tab" role="tablist">
           <button class="nav-link active" id="produk1" data-bs-toggle="tab" data-bs-target="#nav-produk1" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buket</button>
-          <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Lighning Frame</button>
+          <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Ligthning Frame</button>
           <button class="nav-link" id="produk3" data-bs-toggle="tab" data-bs-target="#nav-produk3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hampers & Gift</button>
           <button class="nav-link" id="produk4" data-bs-toggle="tab" data-bs-target="#nav-produk4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Snack & Money tower</button>
           <button class="nav-link" id="produk5" data-bs-toggle="tab" data-bs-target="#nav-produk5" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mahar</button>
@@ -444,6 +444,7 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/tmk5b6n/buket-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">White Snow</h5>
+            <p class="card-text"><b>Rp. 110.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
@@ -456,40 +457,55 @@ data-bs-theme="dark"
             <!-- end detail -->
           </div>
 
+           <!--modal start -->
+
+        <div class="modal fade" id="btn1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
           <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-                <div class="modal fade" id="btn1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Rp 110.000,00</p>
-                  <ul style="list-style-type:circle;">
-                    <li>Free kartu ucapan</li>
-                    <li>Free plastic bag</li>
-                    <li>Free request warna max 2 warna</li>
-                    <li>Ukuran big 55x65 cm</li>
-                  </ul>
-                  
-                </div>
-                <div class="modal-footer">
-                    <p class="card-text">Ready product. Order Now!</p>
-                </div>        
-            </div>
-            </div>
-        </div>
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Rp 110.000,00</p>
+                <ul style="list-style-type:circle;">
+                  <li>Free kartu ucapan</li>
+                  <li>Free plastic bag</li>
+                  <li>Free request warna max 2 warna</li>
+                  <li>Ukuran big 55x65 cm</li>
+                </ul>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                  <p class="card-text">Ready product. Order Now!</p>
+              </div>        
+          </div>
+          </div>
+      </div>
+
+       <!--modal end -->
 
         </div>
         <div class="card">
           <img src="https://i.ibb.co/3FMbrvd/buket-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Bucket Sweet Premium</h5>
-            <p class="card-text">Buket yang cocok sekali buat wisuda ukuran big ya gaes, pemensanan 1-3 hari, ready stok bisa langsung tanya admin.</p>
+            <p class="card-text"><b>Rp. 95.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn2">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -497,16 +513,54 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+          <!--modal start -->
+
+        <div class="modal fade" id="btn2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>Rp 95.000,00</h2>
+                <p>Buket yang cocok sekalibuat wisuda ukuran big ya gaes</p>
+                <p>Pemensanan 1-3 hari</p>
+                <p>Ready stok bisa langusng tanya admin</p>
+                <p></p>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                  <p class="card-text">Ready product. Order Now!</p>
+              </div>        
+          </div>
+          </div>
+      </div>
+
+       <!--modal end -->
+
         </div>
         <div class="card">
           <img src="https://i.ibb.co/3rM3sdp/gift-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Bouquet Snack</h5>
-            <p class="card-text">Bouquet snack bisa diberikan untuk acara-acara spesial, seperti ulang tahun, wisuda, anniversary dan lainnya.</p>
+            <p class="card-text"><b>Rp. 190.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn3">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -518,6 +572,46 @@ data-bs-theme="dark"
         </div>
       </div>
     </div>
+
+     <!--modal start -->
+
+     <div class="modal fade" id="btn3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Rp. 190.000</h2>
+          <p>Disarankan membaca sebelum melakukan transaksi.</p>
+          <p>Bouquet snack bisa diberikan untuk acara-acaraspesial, sepertiulang tahun, wisuda, anniversary dan lainnya</p>
+          <p>Ukuran -+ 40 bisa lebih</p>
+          <p>Untuk buket snack harga mulai Rp 35.000</p>
+          <p>Note :</p>
+          <ol>
+            <li>Tidak ready stock yaa dear, pesan dulu, bayar, baru diproses</li>
+            <li>Proses pengerjaan 1-2 hari, tapi diusahakan secepatnya sesuai antrian</li>
+            <li>Free kartu ucapan (kalo mau langsung ditulisin bisa langsung dinote saat checkout)</li>
+            <li>Untuk yang mau request warna wrapping/pembungkus bisa chat admin terlebih dahulu sesuai dengan stok yang ada</li>
+            <li>Bisa pilih maksimal 2 warna</li>
+            <li>Jika tidak request makan akan kami beri random :)</li>
+            <li>Minimal EXP snack 6 bulan - 1 tahun</li>
+            <li>Jika snack tertera difoto kosong makan akan digantikan snack dengan harga yang sama</li>
+          </ol>
+          <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
+          <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan toko</p>
+    
+          </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
+
         </div>
         <div class="tab-pane fade" id="nav-produk2" role="tabpanel" aria-labelledby="produk2">
             <!-- -------------------------------------------- -->
@@ -527,11 +621,11 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/vzwhqHg/light-frame.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Light Frame 20x20</h5>
-            <p class="card-text">Bingung nyari kado lucu dan unik?. Yuk kadoin frame 3d ini aja. Bisa custom sesukamu loh... Mau buat ultah, kelulusan, wedding, anniversary, pastinya bisa banget.</p>
+            <p class="card-text"><b>Rp. 85.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn4">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -539,16 +633,51 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+               <!--modal start -->
+
+     <div class="modal fade" id="btn4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>85.000,00</h2>
+          <p>Bingung nyari kado lucu dan unik?</br>Yuk kadoin frame 3d ini aja.. Bisa custom sesukamu loh.. Mau buat ultah, kelulusan, wedding, anniversary, pastinya bisa banget</p>
+          <p>Ukuran 20*20cm</p>
+          <p>Silahkan kirim Foto atau ucapannya di chat ya..</p>
+          <p>Foto bisa 1-3 buah JPG atau PNG</p>
+          <p>Format tulisan :</p>
+          <ol>
+            <li>Judul : Misal, happy birthday, happy wedding, happy graduation dll</li>
+            <li>isi pesan : misal, "selamat ulangtahun" dst.. (Jika tidak pake, boleh kosong)</li>
+            <li>From : Isi jika pake</li>
+          </ol>
+          <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
+          <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan toko</p>
+       
+          </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
+
         </div>
         <div class="card">
           <img src="https://i.ibb.co/VpVm3N9/gift-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Light frame buket mini</h5>
-            <p class="card-text">Bingung nyari kado lucu dan unik?. Yuk kadoin frame 3d ini aja. Bisa custom sesukamu loh... Mau buat ultah, kelulusan, wedding, anniversary, pastinya bisa banget.</p>
+            <p class="card-text"><b>Rp. 95.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn5">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -556,16 +685,58 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+           <!--modal start -->
+
+     <div class="modal fade" id="btn5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>95.000,00</h2>
+          <p>Light frame buket mini</br>Dengan 3 variasi ukuran :</br>Ukuran 20x20 harga 85.000</br>Ukuran 25x20 harga 95.000</br>Ukuran 25x25 harga 105.000</p>
+          <p>Sudah dilengkapi dengan</p>
+          <ul style="list-style-type: circle;">
+            <li>box exclusive</li>
+            <li>kartu ucapan</li>
+            <li>bisa request ucapan</li>
+          </ul>
+          <p>memudahkan bestie sehingga tak perlu repot lagi dalam packing</p>
+          <p>Whatsapp untuk:</p>
+          <ul style="list-style-type:circle;">
+            <li>Pemesanan bouquet</li>
+            <li>Request bouquet</li>
+            <li>atau tanya -tanya lainnya</li>
+          </ul>
+          <p></p>
+          <p>Pengiriman :</p>
+          <ul style="list-style-type: circle;">
+            <li>Bisa langsung ambil di tempat</li>
+            <li>via paket jne, jnt, Id, dll</li>
+          </ul>
+       
+          </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
         </div>
         <div class="card">
           <img src="https://i.ibb.co/yBRwx8y/buket-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Paket sweet Premium</h5>
-            <p class="card-text">Satu pake harga lebih ekonomis.</p>
+            <p class="card-text"><b>Rp. 190. 000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn6">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -576,6 +747,47 @@ data-bs-theme="dark"
         </div>
       </div>
       </div>
+
+      
+               <!--modal start -->
+
+     <div class="modal fade" id="btn6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>190.000,00</h2>
+          <p>Satu paket harga lebih ekonomis</br>Terdiri dari:</p>
+          <ol>
+            <li>Buket Premium</li>
+            <li>Light frame 20x15</li>
+          </ol>
+          <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+          <p>Whatsapp untuk:</p>
+          <ul style="list-style-type:circle;">
+            <li>Pemesanan bouquet</li>
+            <li>Request bouquet</li>
+            <li>atau tanya -tanya lainnya</li>
+          </ul>
+          <p></p>
+          <p>Pengiriman :</p>
+          <ul style="list-style-type: circle;">
+            <li>Bisa langsung ambil di tempat</li>
+            <li>via paket jne, jnt, Id, dll</li>
+          </ul>
+          </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
+
         </div>
         <div class="tab-pane fade" id="nav-produk3" role="tabpanel" aria-labelledby="produk3">
             <!-- -------------------------------------------- -->
@@ -585,11 +797,11 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/mXLX99Z/hampers.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Hampers Cantik</h5>
-            <p class="card-text">Hampers cocok untuk hadiah buat bestie maupun doi</p>
+            <p class="card-text"><b>Rp. 60.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn7">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -597,16 +809,57 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+          
+                <!--modal start -->
+
+     <div class="modal fade" id="btn7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>60.000,00</h2>
+            <p>Untuk hampers cocok untuk hadiah buat bestie maupun doi</p>
+            <ul style="list-style-type: circle;">
+              <li>Free greeting card</li>
+              <li>Free paper bag</li>
+              <li>Bisa Costumize</li>
+              <li>Bisa request sesuai budget</li>
+            </ul>
+            <p>Whatsapp untuk:</p>
+            <ul style="list-style-type:circle;">
+              <li>Pemesanan bouquet</li>
+              <li>Request bouquet</li>
+              <li>atau tanya -tanya lainnya</li>
+            </ul>
+            <p></p>
+            <p>Pengiriman :</p>
+            <ul style="list-style-type: circle;">
+              <li>Bisa langsung ambil di tempat</li>
+              <li>via paket jne, jnt, Id, dll</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
         </div>
         <div class="card">
           <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Gift Wisuda</h5>
-            <p class="card-text">Gift wisuda ini cocok untuk kamu berikan kepada bestie kamu mapun doi kamu yang sedang wisuda.</p>
+            <p class="card-text"><b>Rp. 35.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn8">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -614,16 +867,51 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+                <!--modal start -->
+
+     <div class="modal fade" id="btn8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>35.000,00</h2>
+            <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan lampu harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
+            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+            <p>Whatsapp untuk:</p>
+            <ul style="list-style-type:circle;">
+              <li>Pemesanan bouquet</li>
+              <li>Request bouquet</li>
+              <li>atau tanya -tanya lainnya</li>
+            </ul>
+            <p></p>
+            <p>Pengiriman :</p>
+            <ul style="list-style-type: circle;">
+              <li>Bisa langsung ambil di tempat</li>
+              <li>via paket jne, jnt, Id, dll</li>
+            </ul>
+         </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
         </div>
         <div class="card">
           <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Gift Wisuda</h5>
-            <p class="card-text">Gift wisuda ini cocok untuk kamu berikan kepada bestie kamu mapun doi kamu yang sedang wisuda.</p>
+            <p class="card-text"><b>Rp. 35.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn9">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -634,6 +922,42 @@ data-bs-theme="dark"
         </div>
       </div>
       </div>
+
+      
+                <!--modal start -->
+
+     <div class="modal fade" id="btn9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>35.000,00</h2>
+            <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan lampu harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
+            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+            <p>Whatsapp untuk:</p>
+            <ul style="list-style-type:circle;">
+              <li>Pemesanan bouquet</li>
+              <li>Request bouquet</li>
+              <li>atau tanya -tanya lainnya</li>
+            </ul>
+            <p></p>
+            <p>Pengiriman :</p>
+            <ul style="list-style-type: circle;">
+              <li>Bisa langsung ambil di tempat</li>
+              <li>via paket jne, jnt, Id, dll</li>
+            </ul>
+         </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
         </div>
         <div class="tab-pane fade" id="nav-produk4" role="tabpanel" aria-labelledby="produk4">
             <!-- -------------------------------------------- -->
@@ -643,11 +967,11 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/WsZwKFS/snack-tower-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text">Snack tower sangan cocok untuk Ulang tahun dan khitan anak bunda.</p>
+            <p class="card-text"><b>Rp. 500.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -655,16 +979,51 @@ data-bs-theme="dark"
             </button>
             <!-- end detail -->
           </div>
+
+           <!--modal start -->
+
+     <div class="modal fade" id="btn10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Rp. 500.000, 00</h2>
+            <p>Snack tower sangat cocok untuk ulangtahundan khitan anak bunda</p>
+            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+            <p>Whatsapp untuk:</p>
+            <ul style="list-style-type:circle;">
+              <li>Pemesanan bouquet</li>
+              <li>Request bouquet</li>
+              <li>atau tanya -tanya lainnya</li>
+            </ul>
+            <p></p>
+            <p>Pengiriman :</p>
+            <ul style="list-style-type: circle;">
+              <li>Bisa langsung ambil di tempat</li>
+              <li>via paket jne, jnt, Id, dll</li>
+            </ul>
+           </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
         </div>
         <div class="card">
           <img src="https://i.ibb.co/23tp0JH/snack-tower-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text">Snack tower sangan cocok untuk Ulang tahun dan khitan anak bunda.</p>
+            <p class="card-text"><b>Rp. 500.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -677,11 +1036,11 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/KLKt1yY/snack-tower-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text">Snack tower sangan cocok untuk Ulang tahun dan khitan anak bunda.</p>
+            <p class="card-text"><b>Rp. 500.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -701,11 +1060,63 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text">Untuk mahar bisa custom sesuai keinginan kalian ya gaes. Sebelum pesa diharapkan konsultasi dulu agar sesuai keinginan.</p>
+            <p class="card-text"><b>Rp. 90.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
+                Detail
+            </button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Beli
+            </button>
+            <!-- end detail -->
+          </div>
+       <!--modal start -->
+
+     <div class="modal fade" id="btn11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>90.000,00</h2>
+          <p>Untuk mahar bisa custume sesuai keinginan kalian ya gaes</br>Sebelum pesan diharapkan konsultasikan dulu agar sesuai keinginan</p>
+          <p>Untuk pricelist silahkan tanya dulu ke admin, harga menyesuaikan custume yang kalian inginkan</p>
+      
+            <p>Whatsapp untuk:</p>
+            <ul style="list-style-type:circle;">
+              <li>Pemesanan bouquet</li>
+              <li>Request bouquet</li>
+              <li>atau tanya -tanya lainnya</li>
+            </ul>
+            <p></p>
+            <p>Pengiriman :</p>
+            <ul style="list-style-type: circle;">
+              <li>Bisa langsung ambil di tempat</li>
+              <li>via paket jne, jnt, Id, dll</li>
+            </ul>
+           </div>
+          <div class="modal-footer">
+              <p class="card-text">Ready product. Order Now!</p>
+          </div>        
+      </div>
+      </div>
+  </div>
+
+   <!--modal end -->
+        </div>
+        <div class="card">
+          <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mahar Bingkai kayu gold</h5>
+            <p class="card-text"><b>Rp. 90.000</b></p>
+          </div>
+          <div class="card-footer">
+            <!-- tambahan detail button -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -718,28 +1129,11 @@ data-bs-theme="dark"
           <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text">Untuk mahar bisa custom sesuai keinginan kalian ya gaes. Sebelum pesa diharapkan konsultasi dulu agar sesuai keinginan.</p>
+            <p class="card-text"><b>Rp. 90.000</b></p>
           </div>
           <div class="card-footer">
             <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text">Untuk mahar bisa custom sesuai keinginan kalian ya gaes. Sebelum pesa diharapkan konsultasi dulu agar sesuai keinginan.</p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
                 Detail
             </button>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
