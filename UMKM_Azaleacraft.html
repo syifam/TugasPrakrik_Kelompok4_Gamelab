@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>AzaleaCraft</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style type="Text/CSS">
-      
 
-        .box{
+<head>
+  <title>AzaleaCraft</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style type="Text/CSS">
+
+
+    .box{
           width: 1200px;
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -139,363 +142,414 @@
           text-shadow: 2px 2px 4px #000000;
         }
         footer h3{
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-    footer ul{
-      list-style: none;
-      padding: 2px;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        footer ul{
+          list-style: none;
+          padding: 2px;
 
-    }
-    .card-footer{
-      text-align: center;
-    }
-    #accordionFlushExample{
-      margin-left: 200px;
-      margin-right: 200px;
-    }
-    #imgfaq{
-      max-width: 300px;
-    }
-    .imgcenter{
-      transform: translate(20%);
-    }
-    #cardjudul{
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
-    }
+        }
+        .card-footer{
+          text-align: center;
+        }
+        #accordionFlushExample{
+          margin-left: 200px;
+          margin-right: 200px;
+        }
+        #imgfaq{
+          max-width: 300px;
+        }
+        .imgcenter{
+          transform: translate(20%);
+        }
+        #cardjudul{
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+        }
+        
+        #rounded{
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #faqnama{
+          margin-bottom: 10px;
+        }
+        #faqgmail{
+          margin-bottom: 10px;
+        }
+        #cardkatalog{
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+          margin-right: 19px;
+        }
+        #cardkatalog:hover {
+          -ms-transform: scale(1.5); /* IE 9 */
+          -webkit-transform: scale(1.5); /* Safari 3-8 */
+          transform: scale(1.1); 
+        }
+
     
-    #rounded{
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
-
-    #faqnama{
-      margin-bottom: 10px;
-    }
-    #faqgmail{
-      margin-bottom: 10px;
-    }
-    #cardkatalog{
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
-      margin-right: 19px;
-    }
-    #cardkatalog:hover {
-      -ms-transform: scale(1.5); /* IE 9 */
-      -webkit-transform: scale(1.5); /* Safari 3-8 */
-      transform: scale(1.1); 
-    }
-
     </style>
 </head>
 
-<body>  
-<!-- ---------------------------------------------navbar may shifa---------------------------------------------- -->
-<nav
-class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top"
-data-bs-theme="dark"
->
-<div class="container">
-  <a class="navbar-brand" href="#">AzaleaCraft</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="d-flex">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#nav-tab">Catalog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-us">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Contact Us
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">WA</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">Instagram</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#about-us">Email</a></li>
-            <li><hr class="dropdown-divider"/></li>
-          </ul>
-        </li>
-        <!-------------------- tambahan nav ----------->
-        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#faqModal">
-            <a class="nav-link" href="#">FAQ</a>
-        </li>
-        <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+<body>
+  <!-- ---------------------------------------------navbar may shifa---------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AzaleaCraft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nav-tab">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item"
+                    onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">WA</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item"
+                    onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">Instagram</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#about-us">Email</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </li>
+            <!-------------------- tambahan nav ----------->
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#faqModal">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                 Login
-            </button>
-          </li>
-        <!-------------------- end tambahan nav --------------->
-      </ul>
-    </div>
-  </div>
-</div>
-</nav>
-
-<!--------------------------------------------- Modal login syifa------------------------------------->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Login Akun</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form id="form-login">
-        <div class="modal-body">
-                <div class="form-group py-3">
-                    <label for="email">Username</label>
-                    <input type="email" class="form-control" id="email" placeholder="Masukkan Username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
-                </div>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-        <button type="submit" class="btn btn-primary" onsubmit="login()">Login</button>
-        </div>
-        </form>       
-    </div>
-    </div>
-</div>
-
-<!-------------------------- Modal FAQ syifa------------------------------------------->
-<div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="imgcenter">
-      <img src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="Deskripsi Gambar" id="imgfaq">
-    </div>
-      <div class="card">
-        <div class="card-header">
-          <h5 class="modal-title fs-5" id="exampleModalLabel">Form Tanya Admin</h5>
-        </div>
-        <form id="form-faq">
-        <div class="card-body">
-            <div class="mb-3">
-              <label for="ask" class="form-label">Ajukan pertanyaan</label>
-              <input type="text" class="form-control" id="faqnama" placeholder="Nama" required>
-              <input type="email" class="form-control" id="faqgmail" placeholder="Gmail" required>
-              <textarea type="text" class="form-control" id="faq" placeholder="Pertanyaan" rows="4" cols="50" required></textarea>
-            </div>
-        </div>
-        <div class="card-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
+              </button>
+            </li>
+            <!-------------------- end tambahan nav --------------->
+          </ul>
         </div>
       </div>
-      </form>
+    </div>
+  </nav>
+
+  <!--------------------------------------------- Modal login syifa------------------------------------->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login Akun</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="form-login">
+          <div class="modal-body">
+            <div class="form-group py-3">
+              <label for="email">Username</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan Username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- ---------------------------------------------carausel donny damara---------------------------------------------- -->
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <!-------------------------- Modal FAQ syifa------------------------------------------->
+  <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="imgcenter">
+          <img src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="Deskripsi Gambar" id="imgfaq">
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5 class="modal-title fs-5" id="exampleModalLabel">Form Tanya Admin</h5>
+          </div>
+          <form id="form-faq">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="ask" class="form-label">Ajukan pertanyaan</label>
+                <input type="text" class="form-control" id="faqnama" placeholder="Nama" required>
+                <input type="email" class="form-control" id="faqgmail" placeholder="Gmail" required>
+                <textarea type="text" class="form-control" id="faq" placeholder="Pertanyaan" rows="4" cols="50"
+                  required></textarea>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------carausel donny damara---------------------------------------------- -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 5"></button>
-  </div>
-  <div class="carousel-inner">
+    </div>
+    <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Bouquet">
-          <div class="carousel-caption d-none d-md-block">
-              <p></p>
-              <h5 class="textmodel">B O U Q U E T</h5>
-          </div>
+        <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" class="d-block w-100"
+          style="max-height: 400px; object-fit: cover;" alt="Bouquet">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          <h5 class="textmodel">B O U Q U E T</h5>
+        </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Hampers">
-          <div class="carousel-caption d-none d-md-block">
-              <p></p>
-              <h5  class="textmodel">H A M P E R S</h5>
-          </div>
+        <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" class="d-block w-100"
+          style="max-height: 400px; object-fit: cover;" alt="Hampers">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          <h5 class="textmodel">H A M P E R S</h5>
+        </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Light Frame">
-          <div class="carousel-caption d-none d-md-block">
-              <p></p>
-              <h5  class="textmodel">L I G H T N I N G  F R A M E</h5>
-          </div>
+        <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" class="d-block w-100"
+          style="max-height: 400px; object-fit: cover;" alt="Light Frame">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          <h5 class="textmodel">L I G H T N I N G F R A M E</h5>
+        </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Snack Tower">
-          <div class="carousel-caption d-none d-md-block">
-              <p></p>
-              <h5  class="textmodel">S N A C K  T O W E R</h5>
-          </div>
+        <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg" class="d-block w-100"
+          style="max-height: 400px; object-fit: cover;" alt="Snack Tower">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          <h5 class="textmodel">S N A C K T O W E R</h5>
+        </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/PWNwT9x/mahar.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="mahar">
-          <div class="carousel-caption d-none d-md-block">
-              <p></p>
-              <h5  class="textmodel">M A H A R</h5>
-          </div>
+        <img src="https://i.ibb.co/PWNwT9x/mahar.jpg" class="d-block w-100"
+          style="max-height: 400px; object-fit: cover;" alt="mahar">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          <h5 class="textmodel">M A H A R</h5>
+        </div>
       </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-  </button>
-<!-- tambahanku -->
-<div class="text-center">
-<img class="rounded-circle img-thumbnail" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" id="rounded" alt="...">
-</div>
-</div>
-
-<!---------------------------- about umkm -- syifa---------------------------->
-<div class="judul">
-<h3 class="judul" style="text-align: center;">A Z A L E A C R A F T</h3>
-</div>
-<div class="container" align="center">
-    <div class="row">
-        <div class="col-md">
-            <div class="card" id="cardjudul" style="max-width: 576px">
-                <div class="card-body">
-                  <h5 class="card-title">Tentang Kami</h5>
-                  <p class="card-text justify-content-center">Hallo, Selamat Datang di AzaleaCraft, sebuah UMKM yang berdedikasi tinggi dalam dunia handcraft. 
-                    Kami menyediakan beragam produk berkualitas, termasuk buket bunga yang cantik, mahar yang sarat makna, lightning frame yang mempercantik ruangan, hadiah yang istimewa, dan hampers custom yang tak terlupakan. 
-                    Dalam setiap produk yang kami hasilkan, kami mengutamakan kualitas, kreativitas, dan kepuasan pelanggan.</p>
-                  <p class="card-text"><small class="text-body-secondary">Abadikan setiap momen indahmu bersama azalea craft!</small></p>
-                  <p class="card-text">BOUQUET | GIFT | HAMPERS | MAHAR | LIGHTNING FRAME</p>
-                </div>
-                <img src="https://i.ibb.co/BjrRyPP/17.png" class="card-img-bottom" alt="image">
-            </div>
-        </div>
+    </button>
+    <!-- tambahanku -->
+    <div class="text-center">
+      <img class="rounded-circle img-thumbnail" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" id="rounded"
+        alt="...">
     </div>
   </div>
-    
-    <!-- ---------------------------------------------isi irfan---------------------------------------------- -->
-    <div class="card-group">
+
+  <!---------------------------- about umkm -- syifa---------------------------->
+  <div class="judul">
+    <h3 class="judul" style="text-align: center;">A Z A L E A C R A F T</h3>
+  </div>
+  <div class="container" align="center">
+    <div class="row">
+      <div class="col-md">
+        <div class="card" id="cardjudul" style="max-width: 576px">
+          <div class="card-body">
+            <h5 class="card-title">Tentang Kami</h5>
+            <p class="card-text justify-content-center">Hallo, Selamat Datang di AzaleaCraft, sebuah UMKM yang berdedikasi tinggi dalam dunia
+              handcraft.
+              Kami menyediakan beragam produk berkualitas, termasuk buket bunga yang cantik, mahar yang sarat makna,
+              lightning frame yang mempercantik ruangan, hadiah yang istimewa, dan hampers custom yang tak terlupakan.
+              Dalam setiap produk yang kami hasilkan, kami mengutamakan kualitas, kreativitas, dan kepuasan pelanggan.
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Abadikan setiap momen indahmu bersama azalea
+                craft!</small></p>
+            <p class="card-text">BOUQUET | GIFT | HAMPERS | MAHAR | LIGHTNING FRAME</p>
+          </div>
+          <img src="https://i.ibb.co/BjrRyPP/17.png" class="card-img-bottom" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------isi irfan---------------------------------------------- -->
+  <div class="card-group">
     <div class="box py-5">
       <div class="cardKatalog">
         <div class="imgBx">
-           <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" alt="images">
+          <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" alt="images">
         </div>
         <div class="details">
-           <h2>Bouquet<br><span></span></h2>
-         </div>
+          <h2>Bouquet<br><span></span></h2>
+        </div>
       </div>
 
       <div class="cardKatalog">
         <div class="imgBx">
-           <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" alt="images">
+          <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" alt="images">
         </div>
         <div class="details">
-           <h2>Hampers<br><span></span></h2>
-         </div>
+          <h2>Hampers<br><span></span></h2>
+        </div>
       </div>
 
-        <div class="cardKatalog">
-          <div class="imgBx">
-             <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" alt="images">
-          </div>
-          <div class="details">
-             <h2>Lightning Frame<br><span></span></h2>
-           </div>
+      <div class="cardKatalog">
+        <div class="imgBx">
+          <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" alt="images">
         </div>
-
-        <div class="cardKatalog">
-          <div class="imgBx">
-             <img src="https://i.ibb.co/TgYksrp/8.jpg " alt="images">
-          </div>
-          <div class="details">
-             <h2>Gift<br><span></span></h2>
-           </div>
+        <div class="details">
+          <h2>Lightning Frame<br><span></span></h2>
         </div>
+      </div>
 
-        <div class="cardKatalog">
-          <div class="imgBx">
-             <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg " alt="images">
-          </div>
-          <div class="details">
-             <h2>Snack Tower<br><span></span></h2>
-           </div>
+      <div class="cardKatalog">
+        <div class="imgBx">
+          <img src="https://i.ibb.co/TgYksrp/8.jpg " alt="images">
         </div>
+        <div class="details">
+          <h2>Gift<br><span></span></h2>
+        </div>
+      </div>
 
-        <div class="cardKatalog">
-          <div class="imgBx">
-             <img src="https://i.ibb.co/PWNwT9x/mahar.jpg " alt="images">
-          </div>
-          <div class="details">
-             <h2>Mahar<br><span></span></h2>
-           </div>
+      <div class="cardKatalog">
+        <div class="imgBx">
+          <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg " alt="images">
+        </div>
+        <div class="details">
+          <h2>Snack Tower<br><span></span></h2>
+        </div>
+      </div>
+
+      <div class="cardKatalog">
+        <div class="imgBx">
+          <img src="https://i.ibb.co/PWNwT9x/mahar.jpg " alt="images">
+        </div>
+        <div class="details">
+          <h2>Mahar<br><span></span></h2>
         </div>
       </div>
     </div>
-    </div> 
-      
-  <!-- ---------------------------------------------katalog alfa---------------------------------------------- -->
-      <div class="container">  
-      <nav>
-        <div class="nav nav-tabs py-5 justify-content-center" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="produk1" data-bs-toggle="tab" data-bs-target="#nav-produk1" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buket</button>
-          <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Ligthning Frame</button>
-          <button class="nav-link" id="produk3" data-bs-toggle="tab" data-bs-target="#nav-produk3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hampers & Gift</button>
-          <button class="nav-link" id="produk4" data-bs-toggle="tab" data-bs-target="#nav-produk4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Snack & Money tower</button>
-          <button class="nav-link" id="produk5" data-bs-toggle="tab" data-bs-target="#nav-produk5" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mahar</button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-produk1" role="tabpanel" aria-labelledby="profuk1">
-            <!-- ------------------------------------------- -->
-<div id="katalog" class="katalog1">
-    <div class="card-group">
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/tmk5b6n/buket-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">White Snow</h5>
-            <p class="card-text"><b>Rp. 110.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn1">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
+  </div>
+  </div>
 
-           <!--modal start -->
+  <!-- ---------------------------------------------katalog alfa---------------------------------------------- -->
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs py-5 justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="produk1" data-bs-toggle="tab" data-bs-target="#nav-produk1" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">Buket</button>
+        <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false">Ligthning Frame</button>
+        <button class="nav-link" id="produk3" data-bs-toggle="tab" data-bs-target="#nav-produk3" type="button"
+          role="tab" aria-controls="nav-contact" aria-selected="false">Hampers & Gift</button>
+        <button class="nav-link" id="produk4" data-bs-toggle="tab" data-bs-target="#nav-produk4" type="button"
+          role="tab" aria-controls="nav-contact" aria-selected="false">Snack & Money tower</button>
+        <button class="nav-link" id="produk5" data-bs-toggle="tab" data-bs-target="#nav-produk5" type="button"
+          role="tab" aria-controls="nav-contact" aria-selected="false">Mahar</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-produk1" role="tabpanel" aria-labelledby="profuk1">
+        <!-- ------------------------------------------- -->
+        <div id="katalog" class="katalog1">
+          <div class="card-group">
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/tmk5b6n/buket-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">White Snow</h5>
+                <p class="card-text"><b>Rp. 110.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn1">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/3FMbrvd/buket-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bucket Sweet Premium</h5>
+                <p class="card-text"><b>Rp. 95.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn2">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/3rM3sdp/gift-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bouquet Snack</h5>
+                <p class="card-text"><b>Rp. 190.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn3">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal start -->
 
         <div class="modal fade" id="btn1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-          <div class="modal-content">
+            <div class="modal-content">
               <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p>Rp 110.000,00</p>
@@ -519,40 +573,18 @@ data-bs-theme="dark"
                 </ul>
               </div>
               <div class="modal-footer">
-                  <p class="card-text">Ready product. Order Now!</p>
-              </div>        
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
           </div>
-          </div>
-      </div>
-
-       <!--modal end -->
-
         </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/3FMbrvd/buket-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bucket Sweet Premium</h5>
-            <p class="card-text"><b>Rp. 95.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn2">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-
-          <!--modal start -->
 
         <div class="modal fade" id="btn2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-          <div class="modal-content">
+            <div class="modal-content">
               <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <h2>Rp 95.000,00</h2>
@@ -574,708 +606,707 @@ data-bs-theme="dark"
                 </ul>
               </div>
               <div class="modal-footer">
-                  <p class="card-text">Ready product. Order Now!</p>
-              </div>        
-          </div>
-          </div>
-      </div>
-
-       <!--modal end -->
-
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/3rM3sdp/gift-2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bouquet Snack</h5>
-            <p class="card-text"><b>Rp. 190.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn3">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-            
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-     <!--modal start -->
+        <div class="modal fade" id="btn3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>Rp. 190.000</h2>
+                <p>Disarankan membaca sebelum melakukan transaksi.</p>
+                <p>Bouquet snack bisa diberikan untuk acara-acaraspesial, sepertiulang tahun, wisuda, anniversary dan
+                  lainnya</p>
+                <p>Ukuran -+ 40 bisa lebih</p>
+                <p>Untuk buket snack harga mulai Rp 35.000</p>
+                <p>Note :</p>
+                <ol>
+                  <li>Tidak ready stock yaa dear, pesan dulu, bayar, baru diproses</li>
+                  <li>Proses pengerjaan 1-2 hari, tapi diusahakan secepatnya sesuai antrian</li>
+                  <li>Free kartu ucapan (kalo mau langsung ditulisin bisa langsung dinote saat checkout)</li>
+                  <li>Untuk yang mau request warna wrapping/pembungkus bisa chat admin terlebih dahulu sesuai dengan
+                    stok yang ada</li>
+                  <li>Bisa pilih maksimal 2 warna</li>
+                  <li>Jika tidak request makan akan kami beri random :)</li>
+                  <li>Minimal EXP snack 6 bulan - 1 tahun</li>
+                  <li>Jika snack tertera difoto kosong makan akan digantikan snack dengan harga yang sama</li>
+                </ol>
+                <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
+                <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan
+                  pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan toko
+                </p>
 
-     <div class="modal fade" id="btn3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>Rp. 190.000</h2>
-          <p>Disarankan membaca sebelum melakukan transaksi.</p>
-          <p>Bouquet snack bisa diberikan untuk acara-acaraspesial, sepertiulang tahun, wisuda, anniversary dan lainnya</p>
-          <p>Ukuran -+ 40 bisa lebih</p>
-          <p>Untuk buket snack harga mulai Rp 35.000</p>
-          <p>Note :</p>
-          <ol>
-            <li>Tidak ready stock yaa dear, pesan dulu, bayar, baru diproses</li>
-            <li>Proses pengerjaan 1-2 hari, tapi diusahakan secepatnya sesuai antrian</li>
-            <li>Free kartu ucapan (kalo mau langsung ditulisin bisa langsung dinote saat checkout)</li>
-            <li>Untuk yang mau request warna wrapping/pembungkus bisa chat admin terlebih dahulu sesuai dengan stok yang ada</li>
-            <li>Bisa pilih maksimal 2 warna</li>
-            <li>Jika tidak request makan akan kami beri random :)</li>
-            <li>Minimal EXP snack 6 bulan - 1 tahun</li>
-            <li>Jika snack tertera difoto kosong makan akan digantikan snack dengan harga yang sama</li>
-          </ol>
-          <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
-          <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan toko</p>
-    
-          </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-
-        </div>
-        <div class="tab-pane fade" id="nav-produk2" role="tabpanel" aria-labelledby="produk2">
-            <!-- -------------------------------------------- -->
-<div id="katalog" class="katalog2">
-    <div class="card-group">
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/vzwhqHg/light-frame.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Light Frame 20x20</h5>
-            <p class="card-text"><b>Rp. 85.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn4">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-
-               <!--modal start -->
-
-     <div class="modal fade" id="btn4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>85.000,00</h2>
-          <p>Bingung nyari kado lucu dan unik?</br>Yuk kadoin frame 3d ini aja.. Bisa custom sesukamu loh.. Mau buat ultah, kelulusan, wedding, anniversary, pastinya bisa banget</p>
-          <p>Ukuran 20*20cm</p>
-          <p>Silahkan kirim Foto atau ucapannya di chat ya..</p>
-          <p>Foto bisa 1-3 buah JPG atau PNG</p>
-          <p>Format tulisan :</p>
-          <ol>
-            <li>Judul : Misal, happy birthday, happy wedding, happy graduation dll</li>
-            <li>isi pesan : misal, "selamat ulangtahun" dst.. (Jika tidak pake, boleh kosong)</li>
-            <li>From : Isi jika pake</li>
-          </ol>
-          <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
-          <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan toko</p>
-       
-          </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/VpVm3N9/gift-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Light frame buket mini</h5>
-            <p class="card-text"><b>Rp. 95.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn5">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-
-           <!--modal start -->
-
-     <div class="modal fade" id="btn5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>95.000,00</h2>
-          <p>Light frame buket mini</br>Dengan 3 variasi ukuran :</br>Ukuran 20x20 harga 85.000</br>Ukuran 25x20 harga 95.000</br>Ukuran 25x25 harga 105.000</p>
-          <p>Sudah dilengkapi dengan</p>
-          <ul style="list-style-type: circle;">
-            <li>box exclusive</li>
-            <li>kartu ucapan</li>
-            <li>bisa request ucapan</li>
-          </ul>
-          <p>memudahkan bestie sehingga tak perlu repot lagi dalam packing</p>
-          <p>Whatsapp untuk:</p>
-          <ul style="list-style-type:circle;">
-            <li>Pemesanan bouquet</li>
-            <li>Request bouquet</li>
-            <li>atau tanya -tanya lainnya</li>
-          </ul>
-          <p></p>
-          <p>Pengiriman :</p>
-          <ul style="list-style-type: circle;">
-            <li>Bisa langsung ambil di tempat</li>
-            <li>via paket jne, jnt, Id, dll</li>
-          </ul>
-       
-          </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/yBRwx8y/buket-2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Paket sweet Premium</h5>
-            <p class="card-text"><b>Rp. 190. 000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn6">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!--modal end -->
+
       </div>
-      </div>
+      <div class="tab-pane fade" id="nav-produk2" role="tabpanel" aria-labelledby="produk2">
+        <!-- -------------------------------------------- -->
+        <div id="katalog" class="katalog2">
+          <div class="card-group">
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/vzwhqHg/light-frame.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Light Frame 20x20</h5>
+                <p class="card-text"><b>Rp. 85.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn4">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
 
-      
-               <!--modal start -->
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/VpVm3N9/gift-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Light frame buket mini</h5>
+                <p class="card-text"><b>Rp. 95.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn5">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
 
-     <div class="modal fade" id="btn6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>190.000,00</h2>
-          <p>Satu paket harga lebih ekonomis</br>Terdiri dari:</p>
-          <ol>
-            <li>Buket Premium</li>
-            <li>Light frame 20x15</li>
-          </ol>
-          <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
-          <p>Whatsapp untuk:</p>
-          <ul style="list-style-type:circle;">
-            <li>Pemesanan bouquet</li>
-            <li>Request bouquet</li>
-            <li>atau tanya -tanya lainnya</li>
-          </ul>
-          <p></p>
-          <p>Pengiriman :</p>
-          <ul style="list-style-type: circle;">
-            <li>Bisa langsung ambil di tempat</li>
-            <li>via paket jne, jnt, Id, dll</li>
-          </ul>
-          </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-
-        </div>
-        <div class="tab-pane fade" id="nav-produk3" role="tabpanel" aria-labelledby="produk3">
-            <!-- -------------------------------------------- -->
-<div id="katalog" class="katalog3">
-    <div class="card-group">
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/mXLX99Z/hampers.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Hampers Cantik</h5>
-            <p class="card-text"><b>Rp. 60.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn7">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-
-          
-                <!--modal start -->
-
-     <div class="modal fade" id="btn7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>60.000,00</h2>
-            <p>Untuk hampers cocok untuk hadiah buat bestie maupun doi</p>
-            <ul style="list-style-type: circle;">
-              <li>Free greeting card</li>
-              <li>Free paper bag</li>
-              <li>Bisa Costumize</li>
-              <li>Bisa request sesuai budget</li>
-            </ul>
-            <p>Whatsapp untuk:</p>
-            <ul style="list-style-type:circle;">
-              <li>Pemesanan bouquet</li>
-              <li>Request bouquet</li>
-              <li>atau tanya -tanya lainnya</li>
-            </ul>
-            <p></p>
-            <p>Pengiriman :</p>
-            <ul style="list-style-type: circle;">
-              <li>Bisa langsung ambil di tempat</li>
-              <li>via paket jne, jnt, Id, dll</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gift Wisuda</h5>
-            <p class="card-text"><b>Rp. 35.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn8">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-
-                <!--modal start -->
-
-     <div class="modal fade" id="btn8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>35.000,00</h2>
-            <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan lampu harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
-            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
-            <p>Whatsapp untuk:</p>
-            <ul style="list-style-type:circle;">
-              <li>Pemesanan bouquet</li>
-              <li>Request bouquet</li>
-              <li>atau tanya -tanya lainnya</li>
-            </ul>
-            <p></p>
-            <p>Pengiriman :</p>
-            <ul style="list-style-type: circle;">
-              <li>Bisa langsung ambil di tempat</li>
-              <li>via paket jne, jnt, Id, dll</li>
-            </ul>
-         </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gift Wisuda</h5>
-            <p class="card-text"><b>Rp. 35.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn9">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/yBRwx8y/buket-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paket sweet Premium</h5>
+                <p class="card-text"><b>Rp. 190. 000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn6">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
+        
+        <!--modal start -->
+        <div class="modal fade" id="btn4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>85.000,00</h2>
+                <p>Bingung nyari kado lucu dan unik?</br>Yuk kadoin frame 3d ini aja.. Bisa custom sesukamu loh..
+                  Mau buat ultah, kelulusan, wedding, anniversary, pastinya bisa banget</p>
+                <p>Ukuran 20*20cm</p>
+                <p>Silahkan kirim Foto atau ucapannya di chat ya..</p>
+                <p>Foto bisa 1-3 buah JPG atau PNG</p>
+                <p>Format tulisan :</p>
+                <ol>
+                  <li>Judul : Misal, happy birthday, happy wedding, happy graduation dll</li>
+                  <li>isi pesan : misal, "selamat ulangtahun" dst.. (Jika tidak pake, boleh kosong)</li>
+                  <li>From : Isi jika pake</li>
+                </ol>
+                <p>Pembelian sudah termasuk free packing dus dan bubble wrap</p>
+                <p>Kami pastikan mengirim barang dengan kondisi yang sangat baik, karna tidak ingin mengecewakan
+                  pelanggan, tetapi jika terjadi kerusakan diperjalanan, mohon dimengerti semuanya bukan kesalahan
+                  toko</p>
 
-      
-                <!--modal start -->
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modal end -->
 
-     <div class="modal fade" id="btn9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>35.000,00</h2>
-            <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan lampu harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
-            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
-            <p>Whatsapp untuk:</p>
-            <ul style="list-style-type:circle;">
-              <li>Pemesanan bouquet</li>
-              <li>Request bouquet</li>
-              <li>atau tanya -tanya lainnya</li>
-            </ul>
-            <p></p>
-            <p>Pengiriman :</p>
-            <ul style="list-style-type: circle;">
-              <li>Bisa langsung ambil di tempat</li>
-              <li>via paket jne, jnt, Id, dll</li>
-            </ul>
-         </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
+        <!--modal start -->
+        <div class="modal fade" id="btn5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>95.000,00</h2>
+                <p>Light frame buket mini</br>Dengan 3 variasi ukuran :</br>Ukuran 20x20 harga 85.000</br>Ukuran
+                  25x20 harga 95.000</br>Ukuran 25x25 harga 105.000</p>
+                <p>Sudah dilengkapi dengan</p>
+                <ul style="list-style-type: circle;">
+                  <li>box exclusive</li>
+                  <li>kartu ucapan</li>
+                  <li>bisa request ucapan</li>
+                </ul>
+                <p>memudahkan bestie sehingga tak perlu repot lagi dalam packing</p>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
 
-   <!--modal end -->
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="nav-produk4" role="tabpanel" aria-labelledby="produk4">
-            <!-- -------------------------------------------- -->
-<div id="katalog" class="katalog4">
-    <div class="card-group">
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/WsZwKFS/snack-tower-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text"><b>Rp. 500.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
+        <!--modal end -->
 
-           <!--modal start -->
-
-     <div class="modal fade" id="btn10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>Rp. 500.000, 00</h2>
-            <p>Snack tower sangat cocok untuk ulangtahundan khitan anak bunda</p>
-            <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
-            <p>Whatsapp untuk:</p>
-            <ul style="list-style-type:circle;">
-              <li>Pemesanan bouquet</li>
-              <li>Request bouquet</li>
-              <li>atau tanya -tanya lainnya</li>
-            </ul>
-            <p></p>
-            <p>Pengiriman :</p>
-            <ul style="list-style-type: circle;">
-              <li>Bisa langsung ambil di tempat</li>
-              <li>via paket jne, jnt, Id, dll</li>
-            </ul>
-           </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/23tp0JH/snack-tower-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text"><b>Rp. 500.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/KLKt1yY/snack-tower-2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Snack Tower</h5>
-            <p class="card-text"><b>Rp. 500.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-        </div>
-      </div>
-      </div>
-        </div>
-        <div class="tab-pane fade" id="nav-produk5" role="tabpanel" aria-labelledby="produk5">
-            <!-- -------------------------------------------- -->
-<div id="katalog" class="katalog5">
-    <div class="card-group">
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text"><b>Rp. 90.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-       <!--modal start -->
-
-     <div class="modal fade" id="btn11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>90.000,00</h2>
-          <p>Untuk mahar bisa custume sesuai keinginan kalian ya gaes</br>Sebelum pesan diharapkan konsultasikan dulu agar sesuai keinginan</p>
-          <p>Untuk pricelist silahkan tanya dulu ke admin, harga menyesuaikan custume yang kalian inginkan</p>
-      
-            <p>Whatsapp untuk:</p>
-            <ul style="list-style-type:circle;">
-              <li>Pemesanan bouquet</li>
-              <li>Request bouquet</li>
-              <li>atau tanya -tanya lainnya</li>
-            </ul>
-            <p></p>
-            <p>Pengiriman :</p>
-            <ul style="list-style-type: circle;">
-              <li>Bisa langsung ambil di tempat</li>
-              <li>via paket jne, jnt, Id, dll</li>
-            </ul>
-           </div>
-          <div class="modal-footer">
-              <p class="card-text">Ready product. Order Now!</p>
-          </div>        
-      </div>
-      </div>
-  </div>
-
-   <!--modal end -->
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text"><b>Rp. 90.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-        </div>
-        <div class="card" id="cardkatalog">
-          <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mahar Bingkai kayu gold</h5>
-            <p class="card-text"><b>Rp. 90.000</b></p>
-          </div>
-          <div class="card-footer">
-            <!-- tambahan detail button -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
-                Detail
-            </button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Beli
-            </button>
-            <!-- end detail -->
-          </div>
-        </div>
-      </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <br/><br/>
-
-    <!------------------------------- accordion FAQ syifa-------------------------------------------->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h4 class="accordion-header" style="text-align: center;"><b>Daftar Pertanyaan</b></h4>
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-             Bagaimana cara order pesanan?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Untuk pemesanan lebih lanjut bisa klik link berikut <a href="" onclick="window.open('https://linktr.ee/azaleacraft.co','_blank')">Link Pemesanan</a> dan isi format pemesanan setelah memilih produk yang diinginkan</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Berapa lama waktu pengerjaan dan pilihan pengiriman?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Proses pengerjaan 1-2 hari. Pastikan sudah order 2-3 hari sebelumnya ya! Dan Pengiriman pesanan bisa melalui via paket(kurir) / COD / Ambil di store</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Apakah offline dan online store buka setiap hari? 
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">AzeleaCraft buka setiap hari baik online store maupun offline mulai dari jam 08.00 hingga 16.00</div>
-          </div>
-        </div>
-      </div>
-      <br/><br/>
-
-      <!-- ---------------------------------------------footer umi---------------------------------------------- -->
-      <!-- ini update Irfan -->
-      <footer class="footer-top-area bg-dark" id="about-us">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 col-xs-12 py-5">
-              <div class="text-white">
-                <h3 class="widget-title">Information</h3>
-                <ul>
-                  <li><i class="fa fa-paper-plane" aria-hidden="true"></i> Jl. Demang Sapingi, Dumeling, Kec. Wanasari, Kabupaten Brebes, Jawa Tengah 52252, Indonesia, Brebes, Central Java 52252</li>
-                  <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==" class="email-link">AzaleaCraft.Co</a></li>
-                  <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:0857-2543-2005" class="tel-link">+62 857-2543-2005</a></li>
-                  <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:azaleacraft.co@gmail.com" class="email-link">azaleacraft.co@gmail.com</a></li>
+        <!--modal start -->
+        <div class="modal fade" id="btn6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>190.000,00</h2>
+                <p>Satu paket harga lebih ekonomis</br>Terdiri dari:</p>
+                <ol>
+                  <li>Buket Premium</li>
+                  <li>Light frame 20x15</li>
+                </ol>
+                <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
                 </ul>
               </div>
-            </div>
-            <div class="col-sm-4 col-xs-12 py-5">
-              <div class="text-white">
-                <h3 class="widget-title">Peta Lokasi</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18802.869803836467!2d109.01027355587428!3d-6.844024328913668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb18ac6e702ad%3A0xaa5d3a4a4a714e3d!2sToko%20Buket%20Bunga%20Azalea%20Craft%20Brebes!5e0!3m2!1sen!2sid!4v1695271499681!5m2!1sen!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12 py-5">
-              <div class="text-white">
-                <h3 class="widget-title">Contact us</h3>
-                <div class="content">
-                  <form action="#">
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" rows="2" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                  </form>
-                </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
+        <!--modal end -->
 
-      <!-- script js modal -->
-      <script type="text/javascript">
+      </div>
+      <div class="tab-pane fade" id="nav-produk3" role="tabpanel" aria-labelledby="produk3">
+        <!-- -------------------------------------------- -->
+        <div id="katalog" class="katalog3">
+          <div class="card-group">
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/mXLX99Z/hampers.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hampers Cantik</h5>
+                <p class="card-text"><b>Rp. 60.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn7">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
 
-        $( "#form-login" ).on( "submit", function( event ) {
-          alert( "Login berhasil" );
-          event.preventDefault();
-        });
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gift Wisuda</h5>
+                <p class="card-text"><b>Rp. 35.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn8">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
 
-        $( "#form-faq" ).on( "submit", function( event ) {
-          alert( "Data tersimpan" );
-          event.preventDefault();
-        });
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gift Wisuda</h5>
+                <p class="card-text"><b>Rp. 35.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn9">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+          </div>
+        </div>
 
-      </script>
+        <!--modal start -->
+          <div class="modal fade" id="btn7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                  <div class="modal-body">
+                    <h2>60.000,00</h2>
+                    <p>Untuk hampers cocok untuk hadiah buat bestie maupun doi</p>
+                    <ul style="list-style-type: circle;">
+                      <li>Free greeting card</li>
+                      <li>Free paper bag</li>
+                      <li>Bisa Costumize</li>
+                      <li>Bisa request sesuai budget</li>
+                    </ul>
+                      <p>Whatsapp untuk:</p>
+                    <ul style="list-style-type:circle;">
+                      <li>Pemesanan bouquet</li>
+                      <li>Request bouquet</li>
+                      <li>atau tanya-tanya lainnya</li>
+                      </ul>
+                    <p></p>
+                    <p>Pengiriman :</p>
+                    <ul style="list-style-type: circle;">
+                      <li>Bisa langsung ambil di tempat</li>
+                      <li>via paket jne, jnt, Id, dll</li>
+                    </ul>
+                  </div>
+                 <div class="modal-footer">
+                  <p class="card-text">Ready product. Order Now!</p>
+               </div>
+            </div>
+            </div>
+          </div>
+        <!--modal end -->
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+        <!--modal start -->
+        <div class="modal fade" id="btn8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>35.000,00</h2>
+                <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan
+                  lampu harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
+                <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modal end -->
+
+        <!--modal start -->
+        <div class="modal fade" id="btn9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>35.000,00</h2>
+                <p>Mohon di perhatikan ya gaes :</br>*untuk gift wisuda tanpa lampu all hagra 35.000</br>dengan lampu
+                  harga 45.000</br>*Harga di atas sudah dapat paper bag dan kartu ucapan</p>
+                <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modal end -->
+
+      </div>
+      <div class="tab-pane fade" id="nav-produk4" role="tabpanel" aria-labelledby="produk4">
+        <!-- -------------------------------------------- -->
+        <div id="katalog" class="katalog4">
+          <div class="card-group">
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/WsZwKFS/snack-tower-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Snack Tower</h5>
+                <p class="card-text"><b>Rp. 500.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/23tp0JH/snack-tower-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Snack Tower</h5>
+                <p class="card-text"><b>Rp. 500.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/KLKt1yY/snack-tower-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Snack Tower</h5>
+                <p class="card-text"><b>Rp. 500.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn10">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal start -->
+        <div class="modal fade" id="btn10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                  <div class="modal-body">
+                    <h2>Rp. 500.000, 00</h2>
+                    <p>Snack tower sangat cocok untuk ulangtahundan khitan anak bunda</p>
+                    <p>Proses pemesanan 1-3 hari </br>Ready stok bisa langsung tanya admin</p>
+                    <p>Whatsapp untuk:</p>
+                    <ul style="list-style-type:circle;">
+                      <li>Pemesanan bouquet</li>
+                      <li>Request bouquet</li>
+                      <li>atau tanya -tanya lainnya</li>
+                    </ul>
+                    <p></p>
+                    <p>Pengiriman :</p>
+                    <ul style="list-style-type: circle;">
+                      <li>Bisa langsung ambil di tempat</li>
+                      <li>via paket jne, jnt, Id, dll</li>
+                    </ul>
+                  </div>
+                    <div class="modal-footer">
+                      <p class="card-text">Ready product. Order Now!</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+        <!--modal end -->
+
+      </div>
+      <div class="tab-pane fade" id="nav-produk5" role="tabpanel" aria-labelledby="produk5">
+        <!-- -------------------------------------------- -->
+        <div id="katalog" class="katalog5">
+          <div class="card-group">
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahar Bingkai kayu gold</h5>
+                <p class="card-text"><b>Rp. 90.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahar Bingkai kayu gold</h5>
+                <p class="card-text"><b>Rp. 90.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+
+            </div>
+            <div class="card" id="cardkatalog">
+              <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahar Bingkai kayu gold</h5>
+                <p class="card-text"><b>Rp. 90.000</b></p>
+              </div>
+              <div class="card-footer">
+                <!-- tambahan detail button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btn11">
+                  Detail
+                </button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Beli
+                </button>
+                <!-- end detail -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal start -->
+        <div class="modal fade" id="btn11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Produk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>90.000,00</h2>
+                <p>Untuk mahar bisa custume sesuai keinginan kalian ya gaes</br>Sebelum pesan diharapkan
+                  konsultasikan dulu agar sesuai keinginan</p>
+                <p>Untuk pricelist silahkan tanya dulu ke admin, harga menyesuaikan custume yang kalian inginkan
+                </p>
+
+                <p>Whatsapp untuk:</p>
+                <ul style="list-style-type:circle;">
+                  <li>Pemesanan bouquet</li>
+                  <li>Request bouquet</li>
+                  <li>atau tanya -tanya lainnya</li>
+                </ul>
+                <p></p>
+                <p>Pengiriman :</p>
+                <ul style="list-style-type: circle;">
+                  <li>Bisa langsung ambil di tempat</li>
+                  <li>via paket jne, jnt, Id, dll</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <p class="card-text">Ready product. Order Now!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modal end -->
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
+  <!------------------------------- accordion FAQ syifa-------------------------------------------->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h4 class="accordion-header" style="text-align: center;"><b>Daftar Pertanyaan</b></h4>
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Bagaimana cara order pesanan?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Untuk pemesanan lebih lanjut bisa klik link berikut <a href=""
+            onclick="window.open('https://linktr.ee/azaleacraft.co','_blank')">Link Pemesanan</a> dan isi format
+          pemesanan setelah memilih produk yang diinginkan</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Berapa lama waktu pengerjaan dan pilihan pengiriman?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Proses pengerjaan 1-2 hari. Pastikan sudah order 2-3 hari sebelumnya ya! Dan
+          Pengiriman pesanan bisa melalui via paket(kurir) / COD / Ambil di store</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Apakah offline dan online store buka setiap hari?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">AzeleaCraft buka setiap hari baik online store maupun offline mulai dari jam 08.00
+          hingga 16.00</div>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
+
+  <!-- ---------------------------------------------footer umi---------------------------------------------- -->
+  <!-- ini update Irfan -->
+  <footer class="footer-top-area bg-dark" id="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 py-5">
+          <div class="text-white">
+            <h3 class="widget-title">Information</h3>
+            <ul>
+              <li><i class="fa fa-paper-plane" aria-hidden="true"></i> Jl. Demang Sapingi, Dumeling, Kec. Wanasari,
+                Kabupaten Brebes, Jawa Tengah 52252, Indonesia, Brebes, Central Java 52252</li>
+              <li><i class="fa-brands fa-instagram"></i> <a
+                  href="https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ=="
+                  class="email-link">AzaleaCraft.Co</a></li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:0857-2543-2005" class="tel-link">+62
+                  857-2543-2005</a></li>
+              <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:azaleacraft.co@gmail.com"
+                  class="email-link">azaleacraft.co@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 py-5">
+          <div class="text-white">
+            <h3 class="widget-title">Peta Lokasi</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18802.869803836467!2d109.01027355587428!3d-6.844024328913668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb18ac6e702ad%3A0xaa5d3a4a4a714e3d!2sToko%20Buket%20Bunga%20Azalea%20Craft%20Brebes!5e0!3m2!1sen!2sid!4v1695271499681!5m2!1sen!2sid"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 py-5">
+          <div class="text-white">
+            <h3 class="widget-title">Contact us</h3>
+            <div class="content">
+              <form id="form-contact-us">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="2" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+    <!-- script js modal -->
+    <script type="text/javascript">
+
+      $("#form-login").on("submit", function (event) {
+        alert("Login berhasil");
+        event.preventDefault();
+      });
+
+      $("#form-faq").on("submit", function (event) {
+        alert("Data Terkirim");
+        event.preventDefault();
+      });
+
+      $("#form-contact-us").on("submit", function (event) {
+        alert("Pesan Terkirim");
+        event.preventDefault();
+      });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
