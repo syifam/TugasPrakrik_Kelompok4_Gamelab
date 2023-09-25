@@ -207,6 +207,67 @@
           font-size: 150%;
         }
 
+        .wrapper .button{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+
+        margin: 0 5px;
+        overflow: hidden;
+        background: #0c0b0b;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-out;
+      }
+      .wrapper .button:hover{
+        width: 200px;
+      }
+      .wrapper .button .icon{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+      }
+      .wrapper .button:nth-child(1):hover .icon{
+        background: #f85c31;
+      }
+      .wrapper .button:nth-child(2):hover .icon{
+        background: #22dc57;
+      }
+      .wrapper .button:nth-child(3):hover .icon{
+        background: #b0b0b0;
+      }
+
+      .wrapper .button .icon i{
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+      }
+      .wrapper .button:hover .icon i{
+        color: #fff;
+      }
+      .wrapper .button span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+        transition: all 0.3s ease-out;
+      }
+      .wrapper .button:nth-child(1) span{
+        color: #f85c31;
+      }
+      .wrapper .button:nth-child(2) span{
+        color: #22dc57;
+      }
+      .wrapper .button:nth-child(3) span{
+        color: #b0b0b0;
+      }
+
     </style>
 </head>
 
@@ -216,9 +277,9 @@
 
  <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top" data-bs-theme="dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><img class="rounded-circle img-thumbnail" style="height: 70px" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="brand" /></a>
+    <a class="navbar-brand" href="#"><img class="rounded-circle img-thumbnail" style="height: 55px" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="brand" /></a>
     <div class="navbar navbar-header px-0 mt-2">
-      <h4 class="text-white">AzaleaCraft</h4>
+      <h6 class="text-white">AzaleaCraft</h6>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -237,9 +298,34 @@
         <li class="nav-item dropdown">
           <a class="nav-link hover dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Contact Us </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">WA</a></li>
-            <li><a class="dropdown-item" onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">Instagram</a></li>
-            <li><a class="dropdown-item" href="#about-us">Email</a></li>
+            <body>
+              <div class="wrapper">
+                <div class="button">
+                   <div class="icon">
+                    <a class="dropdown-item" onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">
+                         <i class="fa-brands fa-instagram"></i>
+                      </a>
+                   </div>
+                   <span>Instagram</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <a class="dropdown-item" onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">
+                         <i class="fa-brands fa-whatsapp"></i>
+                      </a>
+                   </div>
+                   <span>WhatsApp</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                    <a class="dropdown-item" onclick="window.open('https:// azaleacraft.co@gmail.com','_blank')">
+                         <i class="fa-regular fa-envelope"></i>
+                      </a>
+                   </div>
+                   <span>Email</span>
+                </div>
+             </div>                 
+           </body>
           </ul>
         </li>
         <li class="nav-item" data-bs-toggle="modal" data-bs-target="#faqModal">
@@ -324,35 +410,35 @@
   </div>
   <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Bouquet">
+          <img src="https://i.ibb.co/tQSLTdN/Bouquet.jpg" class="d-block w-100" style="max-height: 450px; object-fit: cover;" alt="Bouquet">
           <div class="carousel-caption d-none d-md-block">
               <p></p>
               <h5 class="textmodel">B O U Q U E T</h5>
           </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Hampers">
+          <img src="https://i.ibb.co/Sx144yJ/Hampers.jpg" class="d-block w-100" style="max-height: 450px; object-fit: cover;" alt="Hampers">
           <div class="carousel-caption d-none d-md-block">
               <p></p>
               <h5  class="textmodel">H A M P E R S</h5>
           </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Light Frame">
+          <img src="https://i.ibb.co/THbb7VJ/Ligh-frame.jpg" class="d-block w-100" style="max-height: 450px; object-fit: cover;" alt="Light Frame">
           <div class="carousel-caption d-none d-md-block">
               <p></p>
               <h5  class="textmodel">L I G H T N I N G  F R A M E</h5>
           </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Snack Tower">
+          <img src="https://i.ibb.co/QFkCp5R/Snack-tower.jpg" class="d-block w-100" style="max-height: 450px; object-fit: cover;" alt="Snack Tower">
           <div class="carousel-caption d-none d-md-block">
               <p></p>
               <h5  class="textmodel">S N A C K  T O W E R</h5>
           </div>
       </div>
       <div class="carousel-item">
-          <img src="https://i.ibb.co/PWNwT9x/mahar.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="mahar">
+          <img src="https://i.ibb.co/PWNwT9x/mahar.jpg" class="d-block w-100" style="max-height: 450px; object-fit: cover;" alt="mahar">
           <div class="carousel-caption d-none d-md-block">
               <p></p>
               <h5  class="textmodel">M A H A R</h5>
@@ -389,7 +475,7 @@
                   <p class="card-text"><small class="text-body-secondary">Abadikan setiap momen indahmu bersama azalea craft!</small></p>
                   <p class="card-text">BOUQUET | GIFT | HAMPERS | MAHAR | LIGHTNING FRAME</p>
                 </div>
-                <img src="https://i.ibb.co/BjrRyPP/17.png" class="card-img-bottom" alt="image">
+                
             </div>
         </div>
     </div>
@@ -1292,7 +1378,6 @@
       <!-- ---------------------end review produk --------------------------------------------------------------- -->
 
       <!-- ---------------------------------------------footer umi---------------------------------------------- -->
-      <!-- ini update Irfan -->
       <footer class="footer-top-area bg-dark" id="about-us">
         <div class="container">
           <div class="row">
@@ -1300,11 +1385,36 @@
             <div class="col-sm-4 col-xs-12 py-5">
               <div class="text-white">
                 <h3 class="widget-title">Information</h3>
+                <body>
+                  <div class="wrapper">
+                    <div class="button">
+                       <div class="icon">
+                        <a class="dropdown-item" onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">
+                             <i class="fa-brands fa-instagram"></i>
+                          </a>
+                       </div>
+                       <span>Instagram</span>
+                    </div>
+                    <div class="button">
+                       <div class="icon">
+                          <a class="dropdown-item" onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">
+                             <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                       </div>
+                       <span>WhatsApp</span>
+                    </div>
+                    <div class="button">
+                       <div class="icon">
+                        <a class="dropdown-item" onclick="window.open('https:// azaleacraft.co@gmail.com','_blank')">
+                             <i class="fa-regular fa-envelope"></i>
+                          </a>
+                       </div>
+                       <span>Email</span>
+                    </div>
+                 </div>                 
+               </body>
                 <ul>
                   <li><i class="fa fa-paper-plane" aria-hidden="true"></i> Jl. Demang Sapingi, Dumeling, Kec. Wanasari, Kabupaten Brebes, Jawa Tengah 52252, Indonesia, Brebes, Central Java 52252</li>
-                  <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==" class="email-link">AzaleaCraft.Co</a></li>
-                  <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:0857-2543-2005" class="tel-link">+62 857-2543-2005</a></li>
-                  <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:azaleacraft.co@gmail.com" class="email-link">azaleacraft.co@gmail.com</a></li>
                 </ul>
               </div>
        
