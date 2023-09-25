@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>AzaleaCraft</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <style type="Text/CSS">
 
         .box{
@@ -18,8 +21,8 @@
           position: relative;
           width: 300px;
           height: 350px;
-          background: #fff;
-          margin: 0 auto;
+          background: hsl(0, 0%, 100%);
+          margin: 25px;
           border-radius: 4px;
           box-shadow:0 2px 10px rgba(0,0,0,.2);
         }
@@ -200,75 +203,56 @@
           padding-right: 200px;
           padding-bottom: 50px;  
         }
+              p{
+          font-size: 150%;
+        }
 
     </style>
 </head>
 
 <body>  
 <!-- ---------------------------------------------navbar may shifa---------------------------------------------- -->
-<nav
-class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top"
-data-bs-theme="dark"
->
-<div class="container">
-  <a class="navbar-brand" href="#">AzaleaCraft</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="d-flex">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <!--Navbar start update by umi-->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img class="rounded-circle img-thumbnail" style="height: 70px" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="brand" /></a>
+    <div class="navbar navbar-header px-0 mt-2">
+      <h4 class="text-white">AzaleaCraft</h4>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#nav-tab">Catalog</a>
+          <a class="nav-link hover" href="#nav-tab">Catalog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-us">About Us</a>
+          <a class="nav-link hover" href="#about-us">About Us</a>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Contact Us
-          </a>
-          <ul class="dropdown-menu">
+          <a class="nav-link hover dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Contact Us </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" onclick="window.open('https://api.whatsapp.com/send/?phone=6285725432005&text&type=phone_number&app_absent=0','_blank')">WA</a></li>
-            <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" onclick="window.open('https://instagram.com/azaleacraft.co?igshid=MmU2YjMzNjRlOQ==','_blank')">Instagram</a></li>
-            <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="#about-us">Email</a></li>
-            <li><hr class="dropdown-divider"/></li>
           </ul>
         </li>
-        <!-------------------- tambahan nav ----------->
         <li class="nav-item" data-bs-toggle="modal" data-bs-target="#faqModal">
-            <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link hover" href="#">FAQ</a>
         </li>
         <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Login
-            </button>
-          </li>
-        <!-------------------- end tambahan nav --------------->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </li>
       </ul>
     </div>
   </div>
-</div>
 </nav>
+<!--Navbar end-->
 
 <!--------------------------------------------- Modal login syifa------------------------------------->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -391,7 +375,7 @@ data-bs-theme="dark"
 
 <!---------------------------- about umkm -- syifa---------------------------->
 <div class="judul">
-<h3 class="judul" style="text-align: center;">A Z A L E A C R A F T</h3>
+<h3 class="judul" style="text-align: center; margin-bottom: auto;">A Z A L E A C R A F T</h3>
 </div>
 <div class="container" align="center">
     <div class="row">
@@ -476,7 +460,7 @@ data-bs-theme="dark"
       <nav>
         <div class="nav nav-tabs py-5 justify-content-center" id="nav-tab" role="tablist">
           <button class="nav-link active" id="produk1" data-bs-toggle="tab" data-bs-target="#nav-produk1" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buket</button>
-          <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Ligthning Frame</button>
+          <button class="nav-link" id="produk2" data-bs-toggle="tab" data-bs-target="#nav-produk2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Lightning Frame</button>
           <button class="nav-link" id="produk3" data-bs-toggle="tab" data-bs-target="#nav-produk3" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hampers & Gift</button>
           <button class="nav-link" id="produk4" data-bs-toggle="tab" data-bs-target="#nav-produk4" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Snack & Money tower</button>
           <button class="nav-link" id="produk5" data-bs-toggle="tab" data-bs-target="#nav-produk5" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mahar</button>
@@ -485,9 +469,9 @@ data-bs-theme="dark"
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-produk1" role="tabpanel" aria-labelledby="profuk1">
             <!-- ------------------------------------------- -->
-<div id="katalog" class="katalog1">
-    <div class="card-group">
-      <div class="col-md">
+<div id="katalog" class="katalog1 ">
+    <div class="card-group">   
+      <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/tmk5b6n/buket-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -547,12 +531,12 @@ data-bs-theme="dark"
        <!--modal end -->
 
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           
           <img src="https://i.ibb.co/3FMbrvd/buket-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Bucket Sweet Premium</h5>
+            <h5 class="card-title">Sweet Premium</h5>
             <p class="card-text"><b>Rp. 95.000</b></p>
           </div>
           <div class="card-footer">
@@ -605,7 +589,7 @@ data-bs-theme="dark"
        <!--modal end -->
 
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           
           <img src="https://i.ibb.co/3rM3sdp/gift-2.jpg" class="card-img-top" alt="...">
@@ -673,7 +657,7 @@ data-bs-theme="dark"
 <div id="katalog" class="katalog2">
   
     <div class="card-group">
-      <div class="col-md">
+      <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/vzwhqHg/light-frame.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -727,7 +711,7 @@ data-bs-theme="dark"
    <!--modal end -->
 
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/VpVm3N9/gift-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -788,7 +772,7 @@ data-bs-theme="dark"
 
    <!--modal end -->
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/yBRwx8y/buket-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -855,7 +839,7 @@ data-bs-theme="dark"
             <!-- -------------------------------------------- -->
 <div id="katalog" class="katalog3">
     <div class="card-group">
-      <div class="col-md">
+      <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/mXLX99Z/hampers.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -915,7 +899,7 @@ data-bs-theme="dark"
 
    <!--modal end -->
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -969,7 +953,7 @@ data-bs-theme="dark"
 
    <!--modal end -->
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/f95jZ9s/gift-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1030,7 +1014,7 @@ data-bs-theme="dark"
             <!-- -------------------------------------------- -->
 <div id="katalog" class="katalog4">
     <div class="card-group">
-      <div class="col-md">
+      <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/WsZwKFS/snack-tower-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1083,7 +1067,7 @@ data-bs-theme="dark"
   </div>
 
    <!--modal end -->
-        </div><div class="col-md">
+        </div><div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/23tp0JH/snack-tower-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1102,7 +1086,7 @@ data-bs-theme="dark"
           </div>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/tJS9L5y/snack-tower-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1128,7 +1112,7 @@ data-bs-theme="dark"
             <!-- -------------------------------------------- -->
 <div id="katalog" class="katalog5">
     <div class="card-group">
-      <div class="col-md">
+      <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1182,7 +1166,7 @@ data-bs-theme="dark"
 
    <!--modal end -->
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1201,7 +1185,7 @@ data-bs-theme="dark"
           </div>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-lg-4 mb-3">
         <div class="card" id="cardkatalog">
           <img src="https://i.ibb.co/k4G5X38/mahar.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1271,13 +1255,13 @@ data-bs-theme="dark"
             <div class="row">
               <h4 class="testimoni-header py-2" style="text-align: center;"><b>Testimoni Customer</b></h4>
               <div class="col">
-                <img src="https://i.ibb.co/xgvdR5r/Screenshot-2023-09-24-202406.png" class="img-fluid w-100 h-150" alt="Slide 1">
+                <img src="https://i.ibb.co/hWQwrwk/review1.png" class="img-fluid w-100 h-150" alt="Slide 1">
               </div>
               <div class="col">
-                <img src="https://i.ibb.co/BGnqWmY/Screenshot-2023-09-24-210237.png" class="img-fluid w-100 h-150" alt="Slide 2">
+                <img src="https://i.ibb.co/kckXJrG/review2.png" class="img-fluid w-100 h-150" alt="Slide 2">
               </div>
               <div class="col">
-                <img src="https://i.ibb.co/522cN2Q/Screenshot-2023-09-24-210310.png" class="img-fluid w-100 h-150" alt="Slide 3">
+                <img src="https://i.ibb.co/ZLxP7WT/review3.png" class="img-fluid w-100 h-150" alt="Slide 3">
               </div>
             </div>
           </div>
@@ -1285,13 +1269,13 @@ data-bs-theme="dark"
             <div class="row">
               <h4 class="testimoni-header py-2" style="text-align: center;"><b>Testimoni Customer</b></h4>
               <div class="col">
-                <img src="https://i.ibb.co/Xtzhshf/Screenshot-2023-09-24-210149.png" class="img-fluid w-100 h-150" alt="Slide 4">
+                <img src="https://i.ibb.co/sF7DCGR/review4.png" class="img-fluid w-100 h-150" alt="Slide 4">
               </div>
               <div class="col">
-                <img src="https://i.ibb.co/R0zCt0J/Screenshot-2023-09-24-210215.png" class="img-fluid w-100 h-150" alt="Slide 5">
+                <img src="https://i.ibb.co/mCJxWHy/review5.png" class="img-fluid w-100 h-150" alt="Slide 5">
               </div>
               <div class="col">
-                <img src="https://i.ibb.co/khcKqTm/Screenshot-2023-09-24-225004.png" class="img-fluid w-100 h-150" alt="Slide 6">
+                <img src="https://i.ibb.co/xhS8Vrk/review6.png" class="img-fluid w-100 h-150" alt="Slide 6">
               </div>
             </div>
           </div>
@@ -1312,6 +1296,7 @@ data-bs-theme="dark"
       <footer class="footer-top-area bg-dark" id="about-us">
         <div class="container">
           <div class="row">
+            
             <div class="col-sm-4 col-xs-12 py-5">
               <div class="text-white">
                 <h3 class="widget-title">Information</h3>
@@ -1322,13 +1307,17 @@ data-bs-theme="dark"
                   <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:azaleacraft.co@gmail.com" class="email-link">azaleacraft.co@gmail.com</a></li>
                 </ul>
               </div>
-            </div>
+       
+          </div>
+         
             <div class="col-sm-4 col-xs-12 py-5">
               <div class="text-white">
                 <h3 class="widget-title">Peta Lokasi</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18802.869803836467!2d109.01027355587428!3d-6.844024328913668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb18ac6e702ad%3A0xaa5d3a4a4a714e3d!2sToko%20Buket%20Bunga%20Azalea%20Craft%20Brebes!5e0!3m2!1sen!2sid!4v1695271499681!5m2!1sen!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
+      
+        
             <div class="col-sm-4 col-xs-12 py-5">
               <div class="text-white">
                 <h3 class="widget-title">Contact us</h3>
@@ -1350,7 +1339,8 @@ data-bs-theme="dark"
               </div>
             </div>
           </div>
-        </div>
+     
+      </div>
       </footer>
       <!-- End of Footer -->
 
