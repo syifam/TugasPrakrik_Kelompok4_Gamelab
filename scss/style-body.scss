@@ -1,0 +1,25 @@
+$font-body-stack: Helvetica, sans-serif;
+$bg-body-color: #bdc3c7;
+
+$font-accordion-button: 'Inconsolata', monospace;
+$bg-accordion-button: #e67e22;
+
+$font-accordion-body: 'Inconsolata', monospace;
+$font-color-accordion-body: white;
+$bg-accordion-body: #2c3e50;
+
+body {
+    font: 100% $font-body-stack;
+    background-color: $bg-body-color;
+}
+
+.accordion-button {
+    font: 50% $font-accordion-button;
+    background-color: $bg-accordion-button;
+}
+
+.accordion-body {
+    font: 100% $font-accordion-body;
+    color: $font-color-accordion-body;
+    background-color: $bg-accordion-body;
+}
